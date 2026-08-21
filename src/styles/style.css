@@ -163,11 +163,15 @@ section h2 span {
 
 /* === Hero Section === */
 
+.swiper-hero {
+  position: relative;
+  overflow: hidden;
+}
+.swiper-slide {
+  position: relative;
+}
 .hero-img {
   background-color: #000;
-}
-.swiper-hero {
-  overflow: hidden;
 }
 .hero-p {
   font-size: 23px !important;
