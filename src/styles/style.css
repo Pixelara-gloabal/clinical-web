@@ -32,7 +32,7 @@ body {
 
 /* === Background Colors === */
 .bg-primary-dark {
-  background: linear-gradient(180deg, #0f766e 0%, #064e4b 100%) !important;
+  background: linear-gradient(135deg, #094e51 0%, #043033 100%) !important;
 }
 
 .primary-bg-soft {
@@ -142,7 +142,7 @@ section h2 span {
 
 .cards:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 30px -5px rgba(13, 148, 136, 0.12) !important;
+  box-shadow: 0 20px 30px -5px rgba(13, 148, 136, 0.14) !important;
   border-color: rgba(13, 148, 136, 0.3) !important;
 }
 
@@ -174,6 +174,14 @@ section h2 span {
 
 .cards img {
   transition: background-color 0.6s ease-out;
+}
+
+.cards .uil-arrow-right {
+  transition: transform 0.3s ease;
+}
+
+.cards:hover .uil-arrow-right {
+  transform: translateX(4px);
 }
 
 /* === General Card === */
@@ -261,4 +269,79 @@ section h2 span {
 .social-icon-btn:hover {
   transform: translateY(-3px) scale(1.05);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* === Premium Footer Styling === */
+.footer-title-bar {
+  width: 12px;
+  height: 3px;
+  background: #14b8a6;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.footer-nav-link {
+  transition: all 0.25s ease;
+}
+
+.footer-nav-link:hover {
+  color: #ffffff !important;
+  opacity: 1 !important;
+  padding-left: 4px;
+}
+
+.footer-link-icon {
+  font-size: 14px;
+  opacity: 0.6;
+  transition: transform 0.25s ease;
+}
+
+.footer-nav-link:hover .footer-link-icon {
+  transform: translateX(3px);
+  color: #14b8a6;
+  opacity: 1;
+}
+
+.footer-contact-pill {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 0.85rem;
+  padding: 0.6rem 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.footer-contact-pill:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(20, 184, 166, 0.4);
+  transform: translateY(-2px);
+}
+
+.contact-pill-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(20, 184, 166, 0.35);
+}
+
+.footer-map-card {
+  border-radius: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.footer-map-card:hover {
+  border-color: rgba(20, 184, 166, 0.6);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.3);
+}
+
+.footer-glow {
+  position: absolute;
+  top: -150px;
+  right: -100px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(20, 184, 166, 0.18) 0%, rgba(20, 184, 166, 0) 70%);
+  pointer-events: none;
+  z-index: 1;
 }
