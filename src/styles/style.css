@@ -107,7 +107,12 @@ section h2 span {
 .cards {
   position: relative;
   overflow: hidden;
-  transition: color 0.5s ease-in-out;
+  background-color: #ffffff;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.5s ease-in-out;
+}
+.cards:hover {
+  transform: translateY(-8px);
 }
 .cards:before {
   content: '';

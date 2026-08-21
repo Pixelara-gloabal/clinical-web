@@ -15,35 +15,41 @@ const Card = ({ arr, icon }) => {
       ref={elementRef}
     >
       {arr.map((item) => {
-        const animationDelay = `${0.2 * item.id}s`;
+        const animationDelay = `${0.1 * item.id}s`;
 
         return (
           <div
             key={item.id}
-            className="col-md-6 col-xl-3"
+            className="col-md-6 col-lg-4 d-flex"
             style={isVisible ? slideInUpAnimate(animationDelay) : {}}
           >
-            <div className="shadow-lg p-3 rounded-xl border border-soft-dark cards">
-              <div className="card-body p-3">
-                {/* Icon or fallback */}
-                <Image
-                  src={icon || item.icon}
-                  alt={`${item.title} | OrthoCare`}
-                  width={75}
-                  height={75}
-                  className="position-static mb-5 p-2 primary-bg-soft"
-                />
+            <div className="shadow-lg p-4 rounded-xl border border-soft-dark cards w-100 d-flex flex-column">
+              <div className="card-body p-0 d-flex flex-column h-100">
+                {/* Icon */}
+                <div className="mb-4">
+                  <Image
+                    src={icon || item.icon}
+                    alt={`${item.title} | OrthoCare`}
+                    width={70}
+                    height={70}
+                    className="p-2 primary-bg-soft rounded-circle"
+                  />
+                </div>
 
-                {/* Title */}
-                <h3 className="fs-24">{item.title}</h3>
+                {/* Title with consistent height */}
+                <h3 className="fs-22 mb-3" style={{ minHeight: '3.2rem', display: 'flex', alignItems: 'center' }}>
+                  {item.title}
+                </h3>
 
                 {/* Description */}
-                <p>{item.cardDescription}</p>
+                <p className="text-muted mb-5 flex-grow-1">
+                  {item.cardDescription}
+                </p>
 
-                {/* Optional link arrow */}
-                <div>
-                  <Link href={`/treatments#treatment-${item.id}`}>
-                    <i className="uil uil-arrow-right bg-dark rounded-circle text-white fs-30 p-1" />
+                {/* Bottom link arrow always aligned at bottom */}
+                <div className="mt-auto pt-2">
+                  <Link href={`/treatments#treatment-${item.id}`} className="d-inline-block text-decoration-none">
+                    <i className="uil uil-arrow-right bg-dark rounded-circle text-white fs-26 p-2 d-inline-flex align-items-center justify-content-center" style={{ width: '42px', height: '42px' }} />
                   </Link>
                 </div>
               </div>
