@@ -41,7 +41,7 @@ const About = ({
         alt={`${headingH1 || heading || 'About'} ${span || ''} ${afterSpan || ''} | OrthoCare`}
         src={src}
         width={535}
-        height={225}
+        height={600}
         layout="responsive"
         className="position-static about1-img"
       />

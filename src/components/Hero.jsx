@@ -29,12 +29,18 @@ const Hero = ({ img, heading, description }) => {
             <div className="row h-100">
               <div className="col-md-10 offset-md-1 col-lg-7 offset-lg-0 col-xl-6 col-xxl-7 text-center text-lg-start justify-content-center align-self-center align-items-start">
                 {/* Hero Heading with animation */}
-                <p className="display-1 fs-56 mb-4 text-white animate__animated animate__slideInDown animate__delay-1s">
+                <h1
+                  className="display-1 fs-52 mb-4 text-white animate__animated animate__slideInDown animate__delay-1s fw-bold"
+                  style={{ textShadow: '0 4px 15px rgba(0, 0, 0, 0.6)' }}
+                >
                   {heading}
-                </p>
+                </h1>
 
                 {/* Hero Description with animation */}
-                <p className="hero-p mb-md-7 mb-0 text-white animate__animated animate__slideInRight animate__delay-2s">
+                <p
+                  className="hero-p mb-md-7 mb-0 text-white animate__animated animate__slideInRight animate__delay-2s"
+                  style={{ textShadow: '0 2px 10px rgba(0, 0, 0, 0.6)', opacity: 0.95 }}
+                >
                   {description}
                 </p>
               </div>
