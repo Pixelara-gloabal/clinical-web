@@ -1,6 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 
-export default class MyDocument extends Document {
+export default class OrthoCare extends Document {
   render() {
     return (
       <Html lang="en">
@@ -32,7 +32,7 @@ export default class MyDocument extends Document {
 }
 
 // Optional: Customize how pages are rendered (useful for adding HOCs or wrappers globally)
-MyDocument.getInitialProps = async (ctx) => {
+OrthoCare.getInitialProps = async (ctx) => {
   const originalRenderPage = ctx.renderPage;
 
   // Enhance the app and components if needed

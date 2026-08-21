@@ -14,12 +14,12 @@ const Topbar = () => {
               <div className="d-flex align-items-center ms-5">
                 <i className="uil uil-envelope text-white fs-22 mt-1 me-2" />
                 <a
-                  href="mailto:info@clinic.com"
+                  href="mailto:info@orthocare.com"
                   className="link-white hover"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  info@clinic.com
+                  info@orthocare.com
                 </a>
               </div>
             </div>

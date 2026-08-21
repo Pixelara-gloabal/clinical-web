@@ -38,7 +38,7 @@ const About = ({
       />
     ) : (
       <Image
-        alt={`${headingH1 || heading || 'About'} ${span || ''} ${afterSpan || ''} | Clinic`}
+        alt={`${headingH1 || heading || 'About'} ${span || ''} ${afterSpan || ''} | OrthoCare`}
         src={src}
         width={535}
         height={225}

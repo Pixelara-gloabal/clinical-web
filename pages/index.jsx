@@ -10,7 +10,7 @@ import UseIntersectionObserver from 'components/UseIntersectionObserver';
 import { slideInUpAnimate } from 'components/animation';
 
 // Data
-import { treatments } from '../data';
+import { treatments } from '../src/data';
 
 const Home = () => {
   // Observe elements for animation triggers
@@ -22,12 +22,12 @@ const Home = () => {
 
       {/* SEO Metadata */}
       <Head>
-        <title>Clinic Web – Healthcare & Services</title>
+        <title>OrthoCare – React & Next.js Template for Orthopaedic Doctors</title>
         <meta
           name="description"
-          content="Healthcare and Clinic Website"
+          content=""
         />
-        <link rel="canonical" href="/" />
+        <link rel="canonical" href="https://orthocare.me" />
       </Head>
 
       <main className="content-wrapper overflow-hidden">

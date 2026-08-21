@@ -7,15 +7,32 @@ import { treatments, usefulLinks } from '../data.js'; // Data for footer links
 // ============================================================
 // Helper function to render widget sections (e.g., Useful Links, Treatments)
 // ============================================================
-const widget = (list, title) => (
+const widget = (list, title, isTreatment) => (
   <div className="widget">
     <h4 className="widget-title fs-24 mb-3">{title}</h4>
     <ul className="list-unstyled text-reset mb-0">
-      {list.map(({title, id }) => (
-        <li key={id}>
-          <NextLink href="#" title={title} />
-        </li>
-      ))}
+      {list.map(({ title, id }) => {
+        let href = "#";
+        if (isTreatment) {
+          href = `/treatments#treatment-${id}`;
+        } else {
+          switch (title) {
+            case 'Home': href = '/'; break;
+            case 'About Dr. John': href = '/about'; break;
+            case 'Disease': href = '/diseases'; break;
+            case 'News & Activities':
+            case 'Blog': href = '/blog'; break;
+            case 'Schedule TeleConsult': href = '/teleconsult'; break;
+            case 'Contact Us': href = '/contact'; break;
+            default: href = '#'; break;
+          }
+        }
+        return (
+          <li key={id}>
+            <NextLink href={href} title={title} />
+          </li>
+        );
+      })}
     </ul>
   </div>
 );
@@ -38,7 +55,7 @@ const Footer = () => {
               <div className="mb-5 d-flex" >
                 <Image
                   src="/img/logo-light.webp"
-                  alt="Logo | Clinic"
+                  alt="Logo | OrthoCare"
                   width={50}
                   height={50}
                   layout="responsive"
@@ -54,8 +71,8 @@ const Footer = () => {
             {/* Email */}
             <div className="d-flex my-1">
               <i className="uil uil-envelope fs-26 text-white" />
-              <a href="mailto:info@clinic.com" className="link-body ms-2 text-white">
-                info@clinic.com
+              <a href="mailto:info@orthocare.com" className="link-body ms-2 text-white">
+                info@orthocare.com
               </a>
             </div>
 
@@ -78,11 +95,11 @@ const Footer = () => {
 
           {/* Link widgets */}
           <div className="col-md-6 col-lg-4 col-xl-3 mt-lg-0 mt-5 text-white d-flex justify-content-md-center">
-            {widget(usefulLinks, 'Useful Links')}
+            {widget(usefulLinks, 'Useful Links', false)}
           </div>
 
           <div className="col-md-6 col-lg-4 col-xl-3 mt-lg-0 mt-5 text-white d-flex justify-content-md-center">
-            {widget(treatments, 'Treatments')}
+            {widget(treatments, 'Treatments', true)}
           </div>
           <div className="col-xl-3 mt-md-5 mt-xl-0 mt-10 overflow-hidden">
             <div className="widget">
@@ -105,7 +122,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="d-md-flex align-items-center justify-content-center">
           <p className="mb-2 mb-lg-0 text-white">
-            © {currentYear} Clinic Web. All rights reserved.
+            © {currentYear} OrthoCare. All rights reserved.
           </p>
         </div>
       </div>

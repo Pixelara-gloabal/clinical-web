@@ -48,22 +48,22 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Clinic Web – Healthcare & Services</title>
-        <meta name="description" content="Clinic Web - A specialized website for medical practices." />
+        <title>OrthoCare – Next.js Healthcare Template for Orthopaedic Doctors & Clinics</title>
+        <meta name="description" content="OrthoCare - A specialized React and Next.js template tailored for orthopedic practices." />
 
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Clinic Web – Healthcare & Services" />
-        <meta property="og:description" content="A specialized website for medical practices." />
-        <meta property="og:url" content="/" />
-        <meta property="og:image" content="/img/logo.webp" />
-        <meta property="og:image:secure_url" content="/img/logo.webp" />
+        <meta property="og:title" content="OrthoCare – Next.js Healthcare Template for Orthopaedic Doctors & Clinics" />
+        <meta property="og:description" content="Free Next.js template for orthopedic doctors, clinics, medical websites – Built with Bootstrap." />
+        <meta property="og:url" content="https://themixly.com/themes/orthopaedic-doctor-react-nextjs-template/" />
+        <meta property="og:image" content="https://themixly.com/wp-content/uploads/2025/06/OrthoCare-Product-Detail-Image-1-scaled.png" />
+        <meta property="og:image:secure_url" content="https://themixly.com/wp-content/uploads/2025/06/OrthoCare-Product-Detail-Image-1-scaled.png" />
 
         {/* Twitter Meta */}
         <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content="Clinic Web – Healthcare & Services" />
-        <meta name="twitter:description" content="A specialized website for medical practices." />
-        <meta name="twitter:image" content="/img/logo.webp" />
+        <meta name="twitter:title" content="OrthoCare – Next.js Healthcare Template for Orthopaedic Doctors & Clinics" />
+        <meta name="twitter:description" content="Free Next.js template for orthopedic doctors, clinics, medical websites – Built with Bootstrap." />
+        <meta name="twitter:image" content="https://themixly.com/wp-content/uploads/2025/06/OrthoCare-Product-Detail-Image-1-scaled.png" />
       </Head>
       <Layout>
         <ThemeProvider>

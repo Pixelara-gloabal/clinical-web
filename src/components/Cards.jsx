@@ -28,7 +28,7 @@ const Card = ({ arr, icon }) => {
                 {/* Icon or fallback */}
                 <Image
                   src={icon || item.icon}
-                  alt={`${item.title} | Clinic`}
+                  alt={`${item.title} | OrthoCare`}
                   width={75}
                   height={75}
                   className="position-static mb-5 p-2 primary-bg-soft"

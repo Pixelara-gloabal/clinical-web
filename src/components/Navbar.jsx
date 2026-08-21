@@ -30,7 +30,7 @@ const Navbar = ({ navClassName, navOtherClass, fancy }) => {
           href="/"
           title={
             <Image
-              alt="Logo | Clinic"
+              alt="Logo | OrthoCare"
               src="/img/logo.webp"
               width={150}
               height={100}
@@ -48,7 +48,7 @@ const Navbar = ({ navClassName, navOtherClass, fancy }) => {
             href="/"
             title={
               <Image
-                alt="Logo | Clinic"
+                alt="Logo | OrthoCare"
                 src="/img/logo-light.webp"
                 width={150}
                 height={100}
@@ -67,21 +67,21 @@ const Navbar = ({ navClassName, navOtherClass, fancy }) => {
               <NextLink href="/" title="Home" className="nav-link" />
             </li>
             <li className="nav-item" data-bs-dismiss="offcanvas">
-              <NextLink href="#" title="About Dr. John" className="nav-link" />
+              <NextLink href="/about" title="About Dr. John" className="nav-link" />
             </li>
 
             {/* Treatments dropdown */}
             <li className="nav-item dropdown">
               <DropdownToggleLink
                 title="Treatments"
-                href="#"
+                href="/treatments"
                 className="nav-link dropdown-toggle"
               />
               <ul className="dropdown-menu" data-bs-dismiss="offcanvas">
                 {treatments.map(({ id, title }) => (
                   <ListItemLink
                     key={id}
-                    href="#"
+                    href={`/treatments#treatment-${id}`}
                     title={title}
                     linkClassName="dropdown-item"
                   />
@@ -90,43 +90,37 @@ const Navbar = ({ navClassName, navOtherClass, fancy }) => {
             </li>
 
             <li className="nav-item" data-bs-dismiss="offcanvas">
-              <NextLink href="#" title="Disease" className="nav-link" />
+              <NextLink href="/diseases" title="Disease" className="nav-link" />
             </li>
 
             {/* Updates dropdown for desktop only */}
             <li className="nav-item dropdown d-none d-lg-block">
               <DropdownToggleLink title="Updates" className="nav-link dropdown-toggle" />
               <ul className="dropdown-menu" data-bs-dismiss="offcanvas">
-                {updates.map(({ id, title }) => (
-                  <ListItemLink
-                    key={id}
-                    href="#"
-                    title={title}
-                    linkClassName="dropdown-item"
-                  />
-                ))}
+                <ListItemLink href="/blog" title="News & Activities" linkClassName="dropdown-item" />
+                <ListItemLink href="/blog" title="Blog" linkClassName="dropdown-item" />
               </ul>
             </li>
 
             {/* Extra nav items for mobile */}
             <li className="nav-item d-block d-lg-none" data-bs-dismiss="offcanvas">
-              <NextLink href="#" title="News & Activities" className="nav-link" />
+              <NextLink href="/blog" title="News & Activities" className="nav-link" />
             </li>
             <li className="nav-item d-block d-lg-none" data-bs-dismiss="offcanvas">
-              <NextLink href="#" title="Blog" className="nav-link" />
+              <NextLink href="/blog" title="Blog" className="nav-link" />
             </li>
             <li className="nav-item" data-bs-dismiss="offcanvas">
-              <NextLink href="#" title="Contact Us" className="nav-link" />
+              <NextLink href="/contact" title="Contact Us" className="nav-link" />
             </li>
             <li className="nav-item d-lg-none" data-bs-dismiss="offcanvas">
-              <NextLink href="#" title="Schedule TeleConsult" className="nav-link" />
+              <NextLink href="/teleconsult" title="Schedule TeleConsult" className="nav-link" />
             </li>
           </ul>
 
           {/* Mobile contact and social links */}
           <div className="offcanvas-footer d-lg-none">
             <div>
-              <NextLink href="mailto:info@clinic.com" title="info@clinic.com" className="link-inverse" />
+              <NextLink href="mailto:info@orthocare.com" title="info@orthocare.com" className="link-inverse" />
               <br />
               <NextLink href="tel:+911234567890" title="+91 12345 67890" />
               <br />
