@@ -25,7 +25,7 @@ const ContactPage = () => {
       <main className="content-wrapper overflow-hidden">
         {/* Banner */}
         <Hero
-          img="/img/home/hero-bg.webp"
+          img="/img/contact/contact-hero-bg.webp"
           heading="Contact Our Clinic"
           description="We are here to help you. Reach out to schedule an appointment, verify insurance, or ask questions about our orthopedic services."
         />

@@ -31,7 +31,7 @@ const TeleConsultPage = () => {
       <main className="content-wrapper overflow-hidden">
         {/* Banner */}
         <Hero
-          img="/img/home/hero-bg.webp"
+          img="/img/teleconsult/teleconsult-hero-bg.webp"
           heading="Schedule a TeleConsultation"
           description="Speak to Dr. John Smith virtually. Safe, convenient, and direct orthopedic medical consultations without leaving your home."
         />

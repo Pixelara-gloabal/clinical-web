@@ -19,7 +19,7 @@ const TreatmentsPage = () => {
       <main className="content-wrapper overflow-hidden">
         {/* Banner */}
         <Hero
-          img="/img/home/hero-bg.webp"
+          img="/img/treatments/treatments-hero-bg.webp"
           heading="Our Treatments & Services"
           description="Providing world-class orthopedic care with advanced robotic precision, minimally invasive techniques, and personalized recovery plans."
         />

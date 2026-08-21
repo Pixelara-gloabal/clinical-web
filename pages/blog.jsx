@@ -40,7 +40,7 @@ const BlogPage = () => {
       <main className="content-wrapper overflow-hidden">
         {/* Banner */}
         <Hero
-          img="/img/home/hero-bg.webp"
+          img="/img/blog/blog-hero-bg.webp"
           heading="News & Blog Updates"
           description="Stay informed with patient education resources, healthy living articles, and the latest updates from our clinic."
         />

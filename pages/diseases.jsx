@@ -44,7 +44,7 @@ const DiseasesPage = () => {
       <main className="content-wrapper overflow-hidden">
         {/* Banner */}
         <Hero
-          img="/img/home/hero-bg.webp"
+          img="/img/diseases/diseases-hero-bg.webp"
           heading="Orthopaedic Conditions"
           description="Understanding joint and bone diseases is the first step toward effective recovery. Explore symptoms and modern treatment pathways."
         />

@@ -17,7 +17,7 @@ const AboutPage = () => {
       <main className="content-wrapper overflow-hidden">
         {/* Banner */}
         <Hero
-          img="/img/home/hero-bg.webp"
+          img="/img/about/about-hero-bg.webp"
           heading="About Dr. John Smith"
           description="Dedicated to restoring your mobility and helping you live a pain-free life through advanced orthopedic solutions."
         />
@@ -28,11 +28,14 @@ const AboutPage = () => {
             <About
               headingH1="Meet Dr. John Smith"
               span=" - Orthopaedic Surgeon"
+              subHeading="LEAD SURGEON & SPECIALIST"
               para="Dr. John Smith is a double board-certified orthopedic surgeon with over 15 years of experience in performing robotic joint replacements, reconstructive surgery, and sports medicine. Graduating at the top of his class from the prestigious Johns Hopkins School of Medicine, he has dedicated his life to perfecting minimally invasive procedures that accelerate recovery and maximize joint longevity."
-              para2="Throughout his career, Dr. Smith has successfully performed over 3,000 joint replacements. He is a pioneer in computer-assisted navigation and robotic orthopedic surgery, giving patients extremely precise implant placements for natural-feeling movement and long-lasting relief."
+              para2="Throughout his career, Dr. Smith has successfully performed over 3,500 joint replacements. He is a pioneer in computer-assisted navigation and robotic orthopedic surgery, giving patients extremely precise implant placements for natural-feeling movement and long-lasting relief."
               para3="At OrthoCare, Dr. Smith believes in a patient-first approach. Whether through state-of-the-art non-surgical therapies or advanced robotic surgery, the goal is always to design a customized pathway to restore active lifestyles safely and efficiently."
               imgPosition="left"
-              src="/img/home/best-orthopedic-doctor.webp"
+              src="/img/about/dr-john-consultation.webp"
+              btnTitle="Book TeleConsultation"
+              btnUrl="/teleconsult"
             />
           </div>
         </section>
