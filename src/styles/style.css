@@ -1,3 +1,8 @@
+/* === Body === */
+body {
+  background-color: #fff !important;
+}
+
 /* === Color Variables === */
 .text-main {
   color: #83c5c8 !important;
@@ -160,6 +165,9 @@ section h2 span {
 
 .hero-img {
   background-color: #000;
+}
+.swiper-hero {
+  overflow: hidden;
 }
 .hero-p {
   font-size: 23px !important;
