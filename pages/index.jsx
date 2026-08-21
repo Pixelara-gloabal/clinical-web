@@ -44,9 +44,13 @@ const Home = () => {
             <About
               headingH1="Best Orthopedic Doctor "
               span="in Location"
-              para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis praesentium, perspiciatis, earum molestias laboriosam reiciendis fuga magnam quidem facilis numquam consequuntur aliquam corporis doloremque eaque aliquid explicabo dicta delectus id est. Voluptas quis, dolor harum autem quam quae fuga corporis obcaecati, animi praesentium ullam ad deserunt consequatur repudiandae, ipsa eaque commodi minima quibusdam reprehenderit! Vitae cupiditate quis inventore voluptas quas itaque rerum. Illo nihil corrupti non at, voluptatum officiis, perferendis aliquid, obcaecati earum magnam voluptatibus deserunt praesentium? Odio qui quam magnam iusto beatae ad natus recusandae consectetur sunt aspernatur iste repellendus doloremque nostrum culpa sed facere quae, accusamus velit delectus!"
+              subHeading="LEAD SURGEON & SPECIALIST"
+              para="Dr. John Smith is a double board-certified orthopedic surgeon dedicated to restoring pain-free movement through state-of-the-art robotic precision, computer-guided navigation, and minimally invasive surgical techniques."
+              para2="With more than 15 years of surgical leadership and 3,500+ successful joint procedures, Dr. Smith designs personalized recovery protocols to help patients return to an active, fulfilling lifestyle safely and quickly."
               imgPosition="left"
               src="/img/home/best-orthopedic-doctor.webp"
+              btnTitle="Learn More About Dr. John"
+              btnUrl="/about"
             />
           </div>
         </section>

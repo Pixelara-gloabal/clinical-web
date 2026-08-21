@@ -23,18 +23,19 @@ const links = [
  * @param {Object} props
  * @param {string} props.className - Optional class name for the <nav> wrapper.
  */
-const SocialLinks = ({ className = 'nav social mt-4' }) => {
+const SocialLinks = ({ className = 'nav social mt-3' }) => {
   return (
-    <nav className={className}>
+    <nav className={`${className} d-flex gap-2`}>
       {links.map(({ id, icon, url }) => (
         <a 
           key={id}
           href={url}
           target="_blank"
           rel="noreferrer"
-          aria-label={`Visit our ${icon.split('-')[1]} page`} // Improves accessibility
+          className="social-icon-btn d-inline-flex align-items-center justify-content-center text-decoration-none"
+          aria-label={`Visit our ${icon.split('-')[1]} page`}
         >
-          <i className={`${icon} fs-30 bg-white rounded`} />
+          <i className={`${icon} fs-18 text-primary`} />
         </a>
       ))}
     </nav>
