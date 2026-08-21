@@ -28,17 +28,20 @@ const Topbar = () => {
             <div className="d-flex align-items-center col-auto me-5 gap-4">
 
               {/* WhatsApp Chat Button */}
-              <button
-                className="bg-white text-main fs-18 rounded border-0 px-3 py-1 d-flex align-items-center fw-bold"
+              <a
+                href="https://wa.me/911234567890"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white text-main fs-18 rounded border-0 px-3 py-1 d-flex align-items-center fw-bold text-decoration-none"
               >
                 <i className="uil uil-whatsapp fs-22 me-2 text-main fw-bold" />
                 <span className="fs-16 fw-bold">Chat With Us</span>
-              </button>
+              </a>
 
               {/* Tele-consultation Link */}
               <Link
-                href="#"
-                className="primary-bg text-white fs-18 rounded border-0 px-3 py-1 d-flex align-items-center fw-bold"
+                href="/teleconsult"
+                className="primary-bg text-white fs-18 rounded border-0 px-3 py-1 d-flex align-items-center fw-bold text-decoration-none"
               >
                 <i className="uil uil-calender me-2 fs-22 text-white fw-bold" />
                 <span className="fs-16 fw-bold">Schedule TeleConsult</span>

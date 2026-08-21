@@ -41,13 +41,11 @@ const Card = ({ arr, icon }) => {
                 <p>{item.cardDescription}</p>
 
                 {/* Optional link arrow */}
-                {item.url && (
-                  <div>
-                    <Link href={`/${item.url}`}>
-                      <i className="uil uil-arrow-right bg-dark rounded-circle text-white fs-30 p-1" />
-                    </Link>
-                  </div>
-                )}
+                <div>
+                  <Link href={`/treatments#treatment-${item.id}`}>
+                    <i className="uil uil-arrow-right bg-dark rounded-circle text-white fs-30 p-1" />
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

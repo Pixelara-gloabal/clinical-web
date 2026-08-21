@@ -18,12 +18,11 @@ const Hero = ({ img, heading, description }) => {
     <div className="wrapper">
       <div className="swiper-hero">
         <div
-          className="swiper-slide bg-overlay bg-overlay-900 bg-dark bg-image hero-img"
+          className="swiper-slide bg-overlay bg-overlay-400 bg-image hero-img"
           style={{
             backgroundImage: `url(${img})`,
             backgroundPosition: 'center center',
             backgroundSize: 'cover',
-            transition: 'background-image 0.3s ease-in-out',
           }}
         >
           <div className="container h-100">

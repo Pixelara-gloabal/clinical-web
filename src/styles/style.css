@@ -181,6 +181,8 @@ section h2 span {
 .about1-img {
   width: 535px !important;
   height: 552px !important;
+  object-fit: cover !important;
+  border-radius: 1rem !important;
 }
 
 /* === Animations === */
