@@ -2,6 +2,7 @@
   "name": "ortho-care",
   "version": "1.0.0",
   "private": true,
+  "author": "Darshak Chavda",
   "scripts": {
     "dev": "next dev",
     "lint": "next lint",

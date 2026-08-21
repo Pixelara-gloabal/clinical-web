@@ -53,17 +53,17 @@ function MyApp({ Component, pageProps }) {
 
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="OrthoCare – Next.js Healthcare Template for Orthopaedic Doctors & Clinics" />
-        <meta property="og:description" content="Free Next.js template for orthopedic doctors, clinics, medical websites – Built with Bootstrap." />
-        <meta property="og:url" content="https://themixly.com/themes/orthopaedic-doctor-react-nextjs-template/" />
-        <meta property="og:image" content="https://themixly.com/wp-content/uploads/2025/06/OrthoCare-Product-Detail-Image-1-scaled.png" />
-        <meta property="og:image:secure_url" content="https://themixly.com/wp-content/uploads/2025/06/OrthoCare-Product-Detail-Image-1-scaled.png" />
+        <meta property="og:title" content="OrthoCare – Clinic & Orthopaedic Specialist Website" />
+        <meta property="og:description" content="OrthoCare - A specialized medical portal for orthopedic doctors, clinics, and joint care services." />
+        <meta property="og:url" content="https://github.com/Pixelara-gloabal/clinical-web" />
+        <meta property="og:image" content="/img/logo.webp" />
+        <meta property="og:image:secure_url" content="/img/logo.webp" />
 
         {/* Twitter Meta */}
         <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content="OrthoCare – Next.js Healthcare Template for Orthopaedic Doctors & Clinics" />
-        <meta name="twitter:description" content="Free Next.js template for orthopedic doctors, clinics, medical websites – Built with Bootstrap." />
-        <meta name="twitter:image" content="https://themixly.com/wp-content/uploads/2025/06/OrthoCare-Product-Detail-Image-1-scaled.png" />
+        <meta name="twitter:title" content="OrthoCare – Clinic & Orthopaedic Specialist Website" />
+        <meta name="twitter:description" content="OrthoCare - A specialized medical portal for orthopedic doctors, clinics, and joint care services." />
+        <meta name="twitter:image" content="/img/logo.webp" />
       </Head>
       <Layout>
         <ThemeProvider>
