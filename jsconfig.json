@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "components/*": ["components/*"],
+      "hooks/*": ["hooks/*"],
+      "theme/*": ["theme/*"],
+      "styles/*": ["styles/*"],
+      "plugins/*": ["plugins/*"],
+      "assets/*": ["assets/*"]
+    }
+  },
+  "include": ["pages", "components", "hooks", "theme", "styles", "plugins", "assets", "data.js"]
+}
+  
