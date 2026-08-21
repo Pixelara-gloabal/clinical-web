@@ -161,10 +161,6 @@ section h2 span {
 .hero-img {
   background-color: #000;
 }
-.hero-img.bg-loaded {
-  background-image: url(/img/home/hero-bg.webp);
-  transition: background-image 0.3s ease-in-out;
-}
 .hero-p {
   font-size: 23px !important;
 }
